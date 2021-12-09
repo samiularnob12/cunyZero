@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .bg-modal {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .modal-content{
+            width: 500px;
+            height: 300px;
+            background-color: skyblue;
+            opacity: 0.6;
+            border-radius: 7px;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .close{
+            position: absolute;
+            top: 0;
+            right: 14px;
+            font-size: 42px;
+            transform: rotate(45deg);
+            cursor: pointer;
+        }
+
+        .button{
+            width: 45px;
+            height: 20px;
+            background-color: white;
+            opacity: 0.6;
+            border-radius: 6px;
+        }
+
+
+    </style>
+    <script type="text/javascript">
+        document.getElementById('button').addEventListener('click', function(){
+            document.querySelector('.bg-modal').style.display = 'flex';
+        });
+
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close" >+</div>
+            <p>
+                <center>
+                    <h1 style="margin-top: 30px;">
+                    Congrats on signing in!!!
+                    </h1>
+
+                    <h3 style="margin-top: 30px;">
+                       Here you will see a small tutorial of the page.
+                    </h3>
+                </center>
+            </p>
+            <form action="">
+
+                <a href="scratch_1.html" id="button" class="button" style="float:right;">NEXT</a>
+
+            </form>
+        </div>
+    </div>
+</header>
+</body>
+</html>
